@@ -1,0 +1,100 @@
+/*------------------КОНФИГУРАЦИЯ-------------------------*/
+configuration {
+    show-icons:                 false;
+}
+
+
+/*------------------ЦВЕТА И ШРИФТ-------------------------*/
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+* {
+    font: "JetBrainsMono 12";
+}
+
+
+/*------------------ОКНО-------------------------*/
+window {
+    width: 600px;
+    height: 165px;
+    border: 2px solid;
+    border-radius: 17px;
+    border-color: @foreground;
+    background-color: @background;
+    padding: 10px;
+    margin: 0px;
+   
+}
+
+
+/*------------------ГЛАВНЫЙ КОНТЕЙНЕР-------------------------*/
+mainbox {
+    spacing: 10px;
+    padding: 20px;
+    children: ["listview" ];
+}
+
+
+/*------------------ИНПУТБАР-------------------------*/
+
+/*-КОНТЕЙНЕР ИНПУТБАРА-*/
+inputbar {
+    spacing: 10px;
+    border-radius: 20px;
+    background-color: @foreground;
+    text-color: @background;
+    children: [aaa];
+}
+
+/*-ИКОНКА-*/
+textbox-prompt-colon {
+    expand: true;
+    str: "";
+    padding: 10px 0 10 14px;
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+/*-ПРОМТ-*/
+prompt {
+    padding: 10 10 10 0px;
+    background-color: inherit;
+    text-color: inherit;
+}
+
+
+/*------------------СПИСОК ЭЛЕМЕТОВ-------------------------*/
+
+listview {
+    columns: 5;
+    lines: 1;
+    padding: 1px;
+    scrollbar: false;
+    padding-left:  5px;
+    spacing: 8px;
+}
+
+
+/*------------------ЭЛЕМЕНТЫ-------------------------*/
+
+/*-ОБЫЧНЫЕ-*/
+element {
+    padding: 8px;
+    border-radius: 10px;
+    text-color: @foreground;
+    orientation:horizontal;
+}
+
+/*-ТЕКСТ-*/
+element-text {
+    background-color: inherit;
+    text-color: inherit;  
+    text-align:center;
+    vertical-align: 0.5;  
+}
+
+
+/*-ВЫБРАННЫЙ ЭЛЕМЕНТ-*/
+element selected.normal {
+    background-color: @foreground;
+    text-color: @background;
+}

@@ -1,0 +1,231 @@
+@import "../../.cache/wal/colors-waybar.css";
+* {
+	all: unset;	
+    font-family: JetBrainsMono,arial;
+    font-size: 8px;
+    font-weight: bold;
+  	margin-top: 1.5px;
+  	margin-bottom: 0.5px;
+    margin-left:1px;
+    margin-right:1px;
+}
+
+
+window#waybar {
+    border-radius:0px;
+    border-bottom: 1.5px solid;
+    border-color: @color5;
+    background-color: rgba(0,0,0,0);
+}
+
+
+tooltip label {
+    color: @foreground;
+}
+
+#cpu,
+#custom-logo,
+#clock,
+#window,
+#workspaces button,
+#tray,
+#language,
+#custom-micro,
+#custom-date,
+#custom-music.
+#custom-music1,
+#custom-mako,
+#custom-cava,
+#backlight,
+#battery,
+#battery.time,
+#network,
+#network.disconnected,
+#network.disabled,
+#disk,
+#network.linked,
+#network.ethernet,
+#network.wifi,
+#custom-swaync,
+#custom-powermenu,
+#pulseaudio {
+    font-family: JetBrainsMono,arial;
+    border-radius: 17px;
+    border: 1.5px solid;
+    border-color: @color5;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 2px;
+    font-size: 15px;
+    background-color: @background ;
+    color: @color4;
+}
+
+#custom-powermenu{
+     margin-right:6px;
+     margin-left:3px;
+     border-radius:15px;
+     color:@color11;
+}
+
+#network,
+#network.disconnected,
+#network.disabled,
+#network.linked,
+#network.ethernet,
+#network.wifi{
+    border-radius: 17px;
+    border: 1.5px solid;
+    border-color: @color5;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 2px;
+    font-size: 15px;
+    background-color: @background ;
+    color: @color6;
+}
+#backlight{
+border-radius: 17px;
+    border: 1.5px solid;
+    border-color: @color5;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 2px;
+    font-size: 15px;
+    background-color: @background ;
+    color: @color9;
+}
+#pulseaudio{
+   border-radius: 17px;
+    border: 1.5px solid;
+    border-color: @color5;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 2px;
+    font-size: 15px;
+    background-color: @background ;
+    color: @color10;
+}
+#custom-logo {
+    margin-left: 7px;
+    margin-right: 7px;
+    padding-left: 13px;
+    padding-right: 15px;
+    background-color: @background ;
+    color: @color11; 
+}
+
+#workspaces button:hover{
+    color: @background;
+    background: rgba(0,0,0,0.2);
+    background-color: @color5;
+    border-radius: 10px;
+    transition:all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    color: @background ;
+    background-color: @color5  ;
+    border-radius: 17px;
+}
+
+#workspaces button.active:hover {
+    color: @color4 ;
+    background-color: @background  ;
+    border-radius: 10px;
+}
+
+#tray {
+	font-size: 10px;
+	border-radius: 16px;
+	border-color: transparent;
+        background-color: @color9; 
+	padding-top: 6px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 6px;
+}
+#cpu {
+	font-size: 15px;
+	border-radius: 16px;
+	border-color: transparent;
+        background-color: @color3;
+        color:@background; 
+	padding-top: 6px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 6px;
+}
+#workspaces button {
+	border-radius:17px;
+	padding-top: 6px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 6px;
+}
+
+#workspaces button.urgent {
+
+    background-color: @color1;
+}
+
+
+#battery,
+#battery.time{
+border-radius: 17px;
+    border: 1.5px solid;
+    border-color: @color5;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 2px;
+    font-size: 15px;
+    background-color: @background ;
+    color: @color10;
+}
+
+#clock{
+border-radius: 17px;
+    border: 1.5px solid;
+    border-color: @color5;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 2px;
+    font-size: 15px;
+    background-color: @background ;
+    color: @color6
+}
+
+#custom-date{
+border-radius: 17px;
+    border: 1.5px solid;
+    border-color: @color5;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 2px;
+    font-size: 15px;
+    background-color: @background ;
+    color: @color9
+}
+
+
+tooltip{
+	background-color:@background;
+	border: 1.5px solid;
+	border-color:@foreground;
+        border-radius: 10px;
+        font-size:20px;
+}

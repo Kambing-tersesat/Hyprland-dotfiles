@@ -1,0 +1,115 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+/*config*/
+configuration {
+    show-icons:                 true;
+    drun-display-format:        "{name}";
+}
+
+
+
+* {
+    font: "JetBrainsMono 12";
+}
+
+
+/*window*/
+window {
+    width: 500px;
+    border: 1.5px solid;
+    border-radius: 1px;
+    padding: 0px;
+}
+
+
+/*container!*/
+mainbox {
+    spacing: 10px;
+    padding: 20px;
+    border: 1.5px solid;
+    border-radius: 1px;
+    border-color: @foreground;
+    children: [ "inputbar", "listview" ];
+}
+
+
+/*inputbar*/
+
+/*-conteiner inputbar*/
+inputbar {
+    spacing: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    children: [ "textbox-prompt-colon", "entry" ];
+}
+
+/*-icons*/
+textbox-prompt-colon {
+    expand: false;
+    str: " ";
+    vertical-align: 0.5;
+}
+
+/*-promt*/
+entry {
+    border-radius:3px;
+    border-bottom: 2px solid;
+    text-color: inherit;
+    placeholder: "Cari apa banh";
+}
+
+/*list elemens*/
+listview {
+    columns: 1;
+    lines: 6;
+    padding: 2px 0px 0px;
+    scrollbar: false;
+    spacing: 10px;
+    border: 2px 0px 0px;
+    scrollbar:true;
+}
+
+
+/*elements*/
+element {
+    spacing: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    border:1.5px;
+    border-color:@foreground;
+}
+
+
+
+
+element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color: @alternate-normal-foreground;
+}
+
+element.selected.normal {
+    text-color: @background;
+    background-color: @selected-urgent-background;
+    border: 2px;
+    border-color: @alternate-normal-foreground;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 32px;
+}
+element-text {
+    background-color: inherit;
+    text-color:  inherit;
+    vertical-align: 0.5;
+}
+
+
+
+
+
+
+
+
+

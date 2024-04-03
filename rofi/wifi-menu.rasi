@@ -1,0 +1,125 @@
+@import "~/.cache/wal/colors-rofi-dark"
+
+/*config*/
+configuration {
+    show-icons:                 true;
+    drun-display-format:        "{name}";
+}
+
+
+
+* {
+    font: "JetBrainsMono 12";
+}
+
+
+/*window*/
+window {
+    width: 700px;
+    border: 1.5px solid;
+    border-color: @foreground;
+    border-radius: 5px;
+    background-color: @background ;
+    padding: 0px;
+}
+
+
+/*container!*/
+mainbox {
+    spacing: 10px;
+    padding: 20px;
+    children: [ "inputbar", "listview" ];
+}
+
+
+/*inputbar*/
+
+/*-conteiner inputbar*/
+inputbar {
+    spacing: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: @background ;
+    text-color: @normal-foreground ;
+    children: [ "textbox-prompt-colon", "entry" ];
+}
+
+/*-icons*/
+textbox-prompt-colon {
+    expand: false;
+    str: " ";
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+/*-promt*/
+entry {
+    background-color: inherit;
+    border-radius:3px;
+    border-bottom: 2px solid;
+    border-color: @foreground;
+    text-color: inherit;
+    placeholder: "SSID NAME";
+    placeholder-color: @foreground;
+}
+
+/*list elemens*/
+listview {
+    columns: 1;
+    lines: 6;
+    padding: 2px 0px 0px;
+    scrollbar: false;
+    spacing: 10px;
+    text-color: @foreground;
+    background-color: @background;
+    border: 2px 0px 0px;
+    scrollbar:true;
+    border-color: @border-color;
+}
+
+
+/*elements*/
+element {
+    spacing: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: @background;
+    text-color:@foreground;
+}
+
+element.normal.normal {
+    background-color: @normal-background;
+    text-color:@normal-foreground;
+}
+
+
+element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color: @alternate-normal-foreground;
+}
+
+element.selected.normal {
+    text-color: @background;
+    background-color: @foreground;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 32px;
+}
+element-text {
+    background-color: inherit;
+    text-color:  inherit;
+    vertical-align: 0.5;
+}
+
+
+
+
+
+
+
+
+
